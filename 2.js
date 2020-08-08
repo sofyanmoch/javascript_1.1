@@ -1,7 +1,7 @@
 //deklarasi nilai
-let mtk = 80;
+let mtk = 0
 let bInd =89;
-let bIng = 90;
+let bIng = 89
 let ipa = 69;
 let nilai = [mtk,bInd,bIng,ipa] 
 let x = nilai.length;  //untuk membuat rata2 menyesuaikan jumlah mapel yg diinput
@@ -12,7 +12,7 @@ for(i = 0; i < x; i++){
 }
 
 //validasi harus diinput & input harus number
-if(typeof total !== 'number' || mtk === 0 || bInd === 0 || bIng === 0 || ipa === 0 ){
+if(typeof total !== 'number' || mtk === 0 || mtk === null  || bInd === 0 || bInd === null || bIng === 0 || bIng === null  || ipa === 0 || ipa === null ){
     console.log("Input harus number dan Harus diisi!!")
     return false;
 }
