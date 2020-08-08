@@ -1,24 +1,24 @@
 //deklarasi nilai
-let nilai = [90,90,90,90]
-
-// validasi inputan harus diisi
-        let x = nilai.length;
-            if( x < 4){
-        console.log("Semua Nilai harus diisi!!")
-     return false;
-} 
-
+let mtk = 80;
+let bInd =89;
+let bIng = 90;
+let ipa = 69;
+let nilai = [mtk,bInd,bIng,ipa] 
+let x = nilai.length;  //untuk membuat rata2 menyesuaikan jumlah mapel yg diinput
 //menghitung nilai total
 let total = 0;
 for(i = 0; i < x; i++){
     total += nilai[i]
 }
 
-// validasi input harus number 
-if(isNaN(total)){
-    console.log("Nilai Harus number")
+//validasi harus diinput & input harus number
+if(typeof total !== 'number' || mtk === 0 || bInd === 0 || bIng === 0 || ipa === 0 ){
+    console.log("Input harus number dan Harus diisi!!")
     return false;
 }
+  
+
+
 //rata-rata
 let rata = total/x;
     console.log(`Rata-rata = ${rata}`)
