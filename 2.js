@@ -1,5 +1,5 @@
 //deklarasi nilai
-let mtk = 0
+let mtk = 90;
 let bInd =89;
 let bIng = 89
 let ipa = 69;
@@ -12,8 +12,8 @@ for(i = 0; i < x; i++){
 }
 
 //validasi harus diinput & input harus number
-if(typeof total !== 'number' || mtk === 0 || mtk === null  || bInd === 0 || bInd === null || bIng === 0 || bIng === null  || ipa === 0 || ipa === null ){
-    console.log("Input harus number dan Harus diisi!!")
+if(typeof total !== 'number' || mtk === null | bInd === null || bIng === null || ipa === null ){
+    console.log(`Input harus number dan Harus diisi!!`)
     return false;
 }
   
