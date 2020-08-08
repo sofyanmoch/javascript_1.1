@@ -1,6 +1,7 @@
 //deklarasi nilai
-let nilai = [80,90,89,69]
-    let total = 0;
+let nilai = [90,90,90,90]
+
+// validasi inputan harus diisi
         let x = nilai.length;
             if( x < 4){
         console.log("Semua Nilai harus diisi!!")
@@ -8,13 +9,18 @@ let nilai = [80,90,89,69]
 } 
 
 //menghitung nilai total
+let total = 0;
 for(i = 0; i < x; i++){
     total += nilai[i]
 }
-    
 
+// validasi input harus number 
+if(isNaN(total)){
+    console.log("Nilai Harus number")
+    return false;
+}
 //rata-rata
-let rata = total/4;
+let rata = total/x;
     console.log(`Rata-rata = ${rata}`)
 
 // grade
@@ -31,4 +37,7 @@ if(rata >= 90 && rata <=100) {
 }
 
 
-
+//note 
+// rata2 akan menyesuaikan dengan jumlah inputan nilai
+// inputan nilai minimal harus 4 yaitu b.indo,mtk,b.inggris dan ipa
+// inputan harus number
